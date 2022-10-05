@@ -34,7 +34,7 @@ namespace _01._SumMatrixElements
                 sum += el;
             }
 
-            Console.WriteLine(sum);
+            Console.WriteLine($"The matrix sum is: {sum}");
         }
     }
 }

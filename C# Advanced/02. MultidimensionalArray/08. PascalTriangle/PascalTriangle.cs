@@ -19,7 +19,8 @@ namespace _08._PascalTriangle
                 {
                     if (col >= 1)
                     {
-                        if (matrix[row - 1].Length - 1 >= col)
+                        if (col < matrix[row].Length - 1)
+                     // if (matrix[row - 1].Length - 1 >= col)
                         {
                             matrix[row][col] = matrix[row - 1][col] + matrix[row - 1][col - 1];
                         }

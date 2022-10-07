@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06. JaggedArrayModification
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. GroupNumbers", "07. GroupNumbers\07. GroupNumbers.csproj", "{9DD2FACE-6CA0-4C2C-9168-69E90C0F8765}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. PascalTriangle", "08. PascalTriangle\08. PascalTriangle.csproj", "{4E8E63D1-2ED9-49C2-9DAB-82D1C44F6DE6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{9DD2FACE-6CA0-4C2C-9168-69E90C0F8765}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DD2FACE-6CA0-4C2C-9168-69E90C0F8765}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DD2FACE-6CA0-4C2C-9168-69E90C0F8765}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E8E63D1-2ED9-49C2-9DAB-82D1C44F6DE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E8E63D1-2ED9-49C2-9DAB-82D1C44F6DE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E8E63D1-2ED9-49C2-9DAB-82D1C44F6DE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E8E63D1-2ED9-49C2-9DAB-82D1C44F6DE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

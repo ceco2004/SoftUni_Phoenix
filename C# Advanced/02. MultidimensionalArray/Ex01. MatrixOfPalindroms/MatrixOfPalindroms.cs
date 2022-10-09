@@ -11,15 +11,17 @@ namespace Ex01._MatrixOfPalindroms
                         .Split(" ", StringSplitOptions.RemoveEmptyEntries)
                         .Select(x => int.Parse(x))
                         .ToArray();
-            int row = rowCol[0];
-            int col = rowCol[1];
 
             char[] alfabet = "abcdefghijklmnopqrstuvwxyz".ToCharArray();
+
+            int row = rowCol[0];
+            int col = rowCol[1];
 
             string[,] matrix = new string[row, col];
 
             for(int i = 0; i < row; i++)
             {
+                int r = i % alfabet.Length;
 
                 for(int j = 0; j < col; j++)
                 {
@@ -27,11 +29,11 @@ namespace Ex01._MatrixOfPalindroms
 
                     if(j == 0)
                     {
-                        data = new string(alfabet[i], 3);
+                        data = new string(alfabet[r], 3);
                     }
                     else
                     {
-                        data = $"{alfabet[i]}{alfabet[i+j]}{alfabet[i]}";
+                        data = $"{alfabet[r]}{alfabet[(r+j) % alfabet.Length]}{alfabet[r]}";
                     }
 
                     matrix[i, j] = data;

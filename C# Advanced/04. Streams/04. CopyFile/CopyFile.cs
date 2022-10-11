@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace _04._CopyFile
 {
-    class Program
+    class CopyFile
     {
         static void Main(string[] args)
         {

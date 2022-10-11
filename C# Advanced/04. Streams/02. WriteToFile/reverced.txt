@@ -1,0 +1,32 @@
+;metsyS gnisu
+;OI.metsyS gnisu
+;qniL.metsyS gnisu
+
+eliFoTetirW_.20_ ecapseman
+{
+eliFoTetirW ssalc    
+{    
+)sgra ][gnirts(niaM diov citats        
+{        
+;"../../.." = htap gnirts            
+;"sc.eliFoTetirW" = ecruoSelif gnirts            
+;"txt.decrever" = tuptuOelif gnirts            
+
+;)ecruoSelif ,htap(enibmoC.htaP = htaPecruos gnirts            
+;)tuptuOelif ,htap(enibmoC.htaP = htaPtuptuo gnirts            
+
+))htaPecruos(redaeRmaertS wen = redaer redaeRmaertS(gnisu            
+{            
+))htaPtuptuo(retirWmaertS wen = retirw retirWmaertS( gnisu                
+{                
+;)(eniLdaeR.redaer = enil gnirts                    
+)llun =! enil( elihw                    
+{                    
+;)))(esreveR.enil ,""(nioJ.gnirts(eniLetirW.retirw                        
+;)(eniLdaeR.redaer = enil                        
+}                    
+}                
+}            
+}        
+}    
+}

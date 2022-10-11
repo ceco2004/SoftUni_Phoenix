@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. ReadFile", "01. ReadFil
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. WriteToFile", "02. WriteToFile\02. WriteToFile.csproj", "{0755F1F0-6D03-4508-9C97-1B5DEBF80406}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. WritingTextToFile", "03. WritingTextToFile\03. WritingTextToFile.csproj", "{97E11E79-6868-4AA6-947F-37BA5CBD9E56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. CopyFile", "04. CopyFile\04. CopyFile.csproj", "{1ED29034-4F27-4045-997D-162344DAA6C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{0755F1F0-6D03-4508-9C97-1B5DEBF80406}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0755F1F0-6D03-4508-9C97-1B5DEBF80406}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0755F1F0-6D03-4508-9C97-1B5DEBF80406}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97E11E79-6868-4AA6-947F-37BA5CBD9E56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97E11E79-6868-4AA6-947F-37BA5CBD9E56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97E11E79-6868-4AA6-947F-37BA5CBD9E56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97E11E79-6868-4AA6-947F-37BA5CBD9E56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ED29034-4F27-4045-997D-162344DAA6C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ED29034-4F27-4045-997D-162344DAA6C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ED29034-4F27-4045-997D-162344DAA6C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ED29034-4F27-4045-997D-162344DAA6C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

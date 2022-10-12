@@ -19,13 +19,7 @@ namespace _01._BankAccount
         public decimal Balance
         {
             get { return this.balance; }
-            set
-            {
-                if(value > 0)
-                {
-                    this.balance = value;
-                }
-            }
+            set { this.balance = value; }
         }
 
         public BankAccount() { }
@@ -33,9 +27,22 @@ namespace _01._BankAccount
         public BankAccount(int id, decimal balance)
         {
             this.id = id;
-           // this.balance = balance;
             Balance = balance;
         }
+
+        public void Deposit(decimal amount)
+        {
+            this.balance += amount;
+        }
+
+        public void Withdraw(decimal amount)
+        {
+            if(balance >= amount)
+            {
+                balance -= amount;
+            }
+        }
+
 
         public override string ToString()
         {

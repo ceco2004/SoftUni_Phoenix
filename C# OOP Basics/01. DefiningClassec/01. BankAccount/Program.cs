@@ -6,7 +6,10 @@ namespace _01._BankAccount
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            BankAccount ba = new BankAccount(1, 10);
+            ba.Balance = -10;
+
+            Console.WriteLine(ba.ToString());
         }
     }
 }

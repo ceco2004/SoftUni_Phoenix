@@ -19,27 +19,27 @@ namespace _01._BankAccount
         public decimal Balance
         {
             get { return this.balance; }
-            set { this.balance = value; }
+            private set { this.balance = value; }
         }
 
         public BankAccount() { }
 
-        public BankAccount(int id, decimal balance)
+        public BankAccount(int id, decimal balance = 0)
         {
-            this.id = id;
+            Id = id;
             Balance = balance;
         }
 
         public void Deposit(decimal amount)
         {
-            this.balance += amount;
+            Balance += amount;
         }
 
         public void Withdraw(decimal amount)
         {
-            if(balance >= amount)
+            if(Balance >= amount)
             {
-                balance -= amount;
+                Balance -= amount;
             }
         }
 

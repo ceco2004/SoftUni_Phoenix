@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace _01._BankAccount
+﻿namespace _01._BankAccounts
 {
-    class BankAccount
+    public class BankAccount
     {
         private int id;
 

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Ex01._DefiningClasses
+﻿namespace Ex01._DefiningClasses
 {
     public class Person
     {

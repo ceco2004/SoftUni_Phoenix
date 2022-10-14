@@ -3,7 +3,7 @@ using RandomNameGeneratorLibrary;
 
 namespace Ex01._DefiningClasses
 {
-    class DefiningClasses
+    class Program
     {
         static void Main(string[] args)
         {

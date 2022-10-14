@@ -27,5 +27,10 @@ namespace Ex01._DefiningClasses
         {
             Name = name;
         }
+
+        public override string ToString()
+        {
+            return $"Person name: {Name}, person age: {Age} Years";
+        }
     }
 }

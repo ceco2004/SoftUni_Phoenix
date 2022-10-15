@@ -7,7 +7,7 @@
         internal int Displacement { get; set; }
         internal string Efficiency { get; set; }
 
-        private string ChekIsZero(string data)
+        private string CheckIfIsZeroOrEmpty(string data)
         {
             return data == "0" || data == string.Empty ? "n/a" : data;
         }
@@ -16,9 +16,9 @@
             string result = string.Empty;
 
             result += $" {Model}:";
-            result += $"\n     Power: {ChekIsZero(Power.ToString())}";
-            result += $"\n     Displacement: {ChekIsZero(Displacement.ToString())}";
-            result += $"\n     Efficiency: {ChekIsZero(Efficiency)}";
+            result += $"\n     Power: {CheckIfIsZeroOrEmpty(Power.ToString())}";
+            result += $"\n     Displacement: {CheckIfIsZeroOrEmpty(Displacement.ToString())}";
+            result += $"\n     Efficiency: {CheckIfIsZeroOrEmpty(Efficiency)}";
 
             return result;
         }

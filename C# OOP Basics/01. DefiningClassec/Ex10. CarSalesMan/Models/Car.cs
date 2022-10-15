@@ -8,7 +8,7 @@
         internal int Weight { get; set; }
         internal string Color { get; set; }
 
-        private string CheckIsZewro(string input)
+        private string CheckIfIsZeroOrEmpty(string input)
         {
             return input == "0" || input == string.Empty ? "n/a" : input;
         }
@@ -18,8 +18,8 @@
             string result = string.Empty;
             result += $"{Model}:";
             result += $"\n {Engine.ToString()}";
-            result += $"\n  Weight: {CheckIsZewro(Weight.ToString())}";
-            result += $"\n  Efficiency: {CheckIsZewro(Engine.Efficiency)}";
+            result += $"\n  Weight: {CheckIfIsZeroOrEmpty(Weight.ToString())}";
+            result += $"\n  Efficiency: {CheckIfIsZeroOrEmpty(Engine.Efficiency)}";
 
             return result;
         }

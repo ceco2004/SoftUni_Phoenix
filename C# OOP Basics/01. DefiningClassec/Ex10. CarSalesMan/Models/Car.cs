@@ -1,0 +1,27 @@
+﻿namespace Ex10._CarSalesMan.Models
+{
+    internal class Car
+    {
+
+        internal string Model { get; set; }
+        internal Engine Engine { get; set; }
+        internal int Weight { get; set; }
+        internal string Color { get; set; }
+
+        private string CheckIsZewro(string input)
+        {
+            return input == "0" || input == string.Empty ? "n/a" : input;
+        }
+
+        public override string ToString()
+        {
+            string result = string.Empty;
+            result += $"{Model}:";
+            result += $"\n {Engine.ToString()}";
+            result += $"\n  Weight: {CheckIsZewro(Weight.ToString())}";
+            result += $"\n  Efficiency: {CheckIsZewro(Engine.Efficiency)}";
+
+            return result;
+        }
+    }
+}

@@ -1,5 +1,4 @@
 ﻿using System;
-using DelegateExersise;
 
 namespace FuncExersise
 {
@@ -13,7 +12,8 @@ namespace FuncExersise
 
         }
 
-        public static string Calculator(int x, int y, Func<int, int, string> fn)
+
+        public static string Calculator(int x, int y, Func<int, int, string> fn )
         {
             return fn(x, y);
         }

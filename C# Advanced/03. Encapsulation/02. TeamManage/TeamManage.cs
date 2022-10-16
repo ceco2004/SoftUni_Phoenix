@@ -1,11 +1,11 @@
 ﻿using _01._SortByNameAndAge.Models;
+using _02._TeamManage.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
-namespace _01._SortByNameAndAge
+namespace _02._TeamManage
 {
-    class Program
+    public class TeamManage
     {
         static void Main(string[] args)
         {
@@ -40,7 +40,11 @@ namespace _01._SortByNameAndAge
             }
             persons.ForEach(p => Console.WriteLine(p.ToString()));
 
+            Team team = new Team("SoftUni");
+
+            persons.ForEach(p => team.AddPlayer(p));
+
+            Console.WriteLine(team);
         }
     }
 }
-

@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateExersise", "Delegat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuncExersise", "FuncExersise\FuncExersise.csproj", "{13785CAA-8B8E-4509-B780-6B797D2DBC78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13. TriFunction", "13. TriFunction\13. TriFunction.csproj", "{A8A6FE4E-E06C-422C-BFBB-ED5EEECC21BC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex13. TriFunction", "13. TriFunction\Ex13. TriFunction.csproj", "{A8A6FE4E-E06C-422C-BFBB-ED5EEECC21BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

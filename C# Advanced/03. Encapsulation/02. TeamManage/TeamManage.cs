@@ -44,6 +44,7 @@ namespace _02._TeamManage
 
             persons.ForEach(p => team.AddPlayer(p));
 
+            
             Console.WriteLine(team);
         }
     }

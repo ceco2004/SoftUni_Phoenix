@@ -14,8 +14,8 @@ namespace _02._TeamManage.Models
         private List<Person> reserveTeam;
 
         public string Name { get => name; private set => name = CheckName(value); }
-        public List<Person> FirstTeam { get => firstTeam; }
-        public List<Person> ReserveTeam { get => reserveTeam;}
+        public IReadOnlyList<Person> FirstTeam { get => firstTeam; }
+        public IReadOnlyList<Person> ReserveTeam { get => reserveTeam;}
 
         public Team(string name)
         {

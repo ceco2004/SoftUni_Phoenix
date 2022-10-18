@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. SingleInheritance", "01
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. ReusingClasses", "02. ReusingClasses\02. ReusingClasses.csproj", "{472606E6-3DB6-4228-88FA-2A0A3F13E5F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex01. PersonProblem", "Ex01. PersonProblem\Ex01. PersonProblem.csproj", "{50E67351-F01E-40B2-BF2D-2B1B46367D38}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{472606E6-3DB6-4228-88FA-2A0A3F13E5F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{472606E6-3DB6-4228-88FA-2A0A3F13E5F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{472606E6-3DB6-4228-88FA-2A0A3F13E5F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50E67351-F01E-40B2-BF2D-2B1B46367D38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50E67351-F01E-40B2-BF2D-2B1B46367D38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50E67351-F01E-40B2-BF2D-2B1B46367D38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50E67351-F01E-40B2-BF2D-2B1B46367D38}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

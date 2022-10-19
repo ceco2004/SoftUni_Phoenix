@@ -11,7 +11,7 @@ namespace Ex01._PersonProblem
              Person person = new Person("Ceco", 40);
             Console.WriteLine(person);
 
-            Child child = new Child("Ceco", 12);
+            Child child = new Child("Ceco", -1);
             Console.WriteLine(child);
         }
     }

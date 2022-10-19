@@ -11,7 +11,7 @@ namespace Ex01._PersonProblem.Models
         private string name;
 
 
-        public int Age { get { return age; } set { age = CheckAge(value); } }
+        public int Age { get => age; set => age = CheckAge(value); }
         public string Name { get => name; set => name = CheckName(value); }
 
         public Person(string name, int age)

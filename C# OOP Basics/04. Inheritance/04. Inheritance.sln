@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. ReusingClasses", "02. R
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex01. PersonProblem", "Ex01. PersonProblem\Ex01. PersonProblem.csproj", "{50E67351-F01E-40B2-BF2D-2B1B46367D38}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex02. BookShop", "Ex02. BookShop\Ex02. BookShop.csproj", "{714E1E7C-23F7-470F-89DA-F7F12CE5559E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{50E67351-F01E-40B2-BF2D-2B1B46367D38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50E67351-F01E-40B2-BF2D-2B1B46367D38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50E67351-F01E-40B2-BF2D-2B1B46367D38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{714E1E7C-23F7-470F-89DA-F7F12CE5559E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{714E1E7C-23F7-470F-89DA-F7F12CE5559E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{714E1E7C-23F7-470F-89DA-F7F12CE5559E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{714E1E7C-23F7-470F-89DA-F7F12CE5559E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

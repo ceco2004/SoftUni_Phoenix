@@ -7,13 +7,12 @@ namespace Ex01._PersonProblem
     {
         static void Main(string[] args)
         {
-            Person person = new Person("Ceco", 40);
-            Console.WriteLine(person.Name);
-            Console.WriteLine(person.Age);
+           
+             Person person = new Person("Ceco", 40);
+            Console.WriteLine(person);
 
-            Child child = new Child("Ceco", -12);
-            Console.WriteLine(child.Name);
-            Console.WriteLine(child.Age);
+            Child child = new Child("Ceco", 12);
+            Console.WriteLine(child);
         }
     }
 }

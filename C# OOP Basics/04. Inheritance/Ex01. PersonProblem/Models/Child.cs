@@ -1,15 +1,24 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Ex01._PersonProblem.Models
 {
     public class Child : Person
     {
-        private const string childAgeErrMsg = "Child age can't be more than 15 Years!";
+        private const string childAgeErrMsg = "Child's age can't be more than 15 Years!";
+        private const string nameErrMsg = "Child's name must be at least 3 symbols!";
 
-        public Child(string name, int age): base(name, age)
+        public Child(string name, int age) : base(name, age)
         {
+        }
+
+        protected override string CheckName(string name)
+        {
+            if(name.Length < 3)
+            {
+                throw new ArgumentException(nameErrMsg);
+            }
+
+            return name;
         }
 
         protected override int CheckAge(int age)
@@ -18,7 +27,7 @@ namespace Ex01._PersonProblem.Models
             {
                 throw new ArgumentException(childAgeErrMsg);
             }
-            return age;
+            return base.CheckAge(age);
         }
     }
 }

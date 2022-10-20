@@ -5,7 +5,6 @@ namespace Ex03._Mankind.Models
 {
     public abstract class Human
     {
-        private const string missingTwoNamesErr = "Expected First and Last names!";
         private const string missingCapitalLetterErr = "Expected upper case letter! Argument: Name";
         private const string shortNameErr = "Expected length at least 3 symbols! Argument: Name ";
 

@@ -29,7 +29,7 @@ namespace _02._Cars.Models
 
         public override string ToString()
         {
-            return $"{Color} {GetType().Name} {Model} with {Battery} batteries ";
+            return $"{Color} {GetType().Name} {Model} with {Battery} batteriesgit ";
         }
     }
 }

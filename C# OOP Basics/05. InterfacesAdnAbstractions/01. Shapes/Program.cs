@@ -1,12 +1,15 @@
-﻿using System;
+﻿using _01._Shapes.Interfaces;
+using _01._Shapes.Models;
+using System;
 
 namespace _01._Shapes
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            IDrawable rect = new Rectangle(5, 5);
+            rect.Draw();
         }
     }
 }

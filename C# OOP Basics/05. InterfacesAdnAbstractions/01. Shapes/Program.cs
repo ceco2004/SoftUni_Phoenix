@@ -1,6 +1,5 @@
 ﻿using _01._Shapes.Interfaces;
 using _01._Shapes.Models;
-using System;
 
 namespace _01._Shapes
 {

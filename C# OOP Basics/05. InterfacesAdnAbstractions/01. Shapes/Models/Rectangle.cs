@@ -17,6 +17,7 @@ namespace _01._Shapes.Models
         public void Draw()
         {
             string line = string.Empty;
+
             for (int i = 0; i < heigth; i++)
             {
                 if (i == 0 || i == heigth - 1)

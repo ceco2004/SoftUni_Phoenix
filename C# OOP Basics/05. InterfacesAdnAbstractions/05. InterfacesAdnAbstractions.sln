@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. BorderControl", "05. Bo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. BirthdayExtension", "BirthdayExtension\06. BirthdayExtension.csproj", "{E7F3A23B-1516-4526-A287-29D8B4FB5AE2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. Colections", "09. Colections\09. Colections.csproj", "{FE9BAC89-0E86-43E7-905F-4DB0E7D4E596}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{E7F3A23B-1516-4526-A287-29D8B4FB5AE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7F3A23B-1516-4526-A287-29D8B4FB5AE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7F3A23B-1516-4526-A287-29D8B4FB5AE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE9BAC89-0E86-43E7-905F-4DB0E7D4E596}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE9BAC89-0E86-43E7-905F-4DB0E7D4E596}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE9BAC89-0E86-43E7-905F-4DB0E7D4E596}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE9BAC89-0E86-43E7-905F-4DB0E7D4E596}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

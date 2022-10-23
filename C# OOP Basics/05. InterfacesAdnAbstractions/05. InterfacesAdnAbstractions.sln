@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32929.386
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Shapes", "01. Shapes\01. Shapes.csproj", "{0BE40B43-610D-4C4C-93A7-EBB01B8A888D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Shapes", "01. Shapes\01. Shapes.csproj", "{0BE40B43-610D-4C4C-93A7-EBB01B8A888D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Cars", "02. Cars\02. Cars.csproj", "{11A5B65C-7DA7-4BB5-B2D1-DE1256A32AE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Cars", "02. Cars\02. Cars.csproj", "{11A5B65C-7DA7-4BB5-B2D1-DE1256A32AE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Person", "03. Person\03. Person.csproj", "{A83C419D-A2E0-451C-A456-CD05309A9C8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. Person", "03. Person\03. Person.csproj", "{A83C419D-A2E0-451C-A456-CD05309A9C8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Telephony", "04. Telephony\04. Telephony.csproj", "{AEB5C3BC-66A4-47A5-A5CB-EBC7CBBEAD41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04. Telephony", "04. Telephony\04. Telephony.csproj", "{AEB5C3BC-66A4-47A5-A5CB-EBC7CBBEAD41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. BorderControl", "05. BorderControl\05. BorderControl.csproj", "{6AE65705-2479-4848-BFAB-D7F201C04CD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{AEB5C3BC-66A4-47A5-A5CB-EBC7CBBEAD41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEB5C3BC-66A4-47A5-A5CB-EBC7CBBEAD41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEB5C3BC-66A4-47A5-A5CB-EBC7CBBEAD41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AE65705-2479-4848-BFAB-D7F201C04CD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AE65705-2479-4848-BFAB-D7F201C04CD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AE65705-2479-4848-BFAB-D7F201C04CD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AE65705-2479-4848-BFAB-D7F201C04CD2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

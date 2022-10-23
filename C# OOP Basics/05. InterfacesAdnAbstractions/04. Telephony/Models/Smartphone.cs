@@ -4,12 +4,12 @@ namespace _04._Telephony.Models
 {
     public class Smartphone : ICallable, IBrowsable
     {
-        public  string Browse(string url)
+        public string Browse(string url)
         {
             return $"Browsing: {url}";
         }
 
-        public  string Call(string number)
+        public string Call(string number)
         {
             return $"Calling... {number}";
         }

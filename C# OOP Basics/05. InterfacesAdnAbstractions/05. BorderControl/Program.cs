@@ -2,11 +2,10 @@
 using _05._BorderControl.Models.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace _05._BorderControl
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -42,7 +41,7 @@ namespace _05._BorderControl
             }
         }
 
-        public static void AddToColection(ITrackable entity, IEnumerable<ITrackable> colection)
+        private static void AddToColection(ITrackable entity, IEnumerable<ITrackable> colection)
         {
             if(colection is List<ITrackable> tempColection)
             {
@@ -50,7 +49,7 @@ namespace _05._BorderControl
             }
         }
 
-        public static ITrackable CreateCitizen(string[] data)
+        private static ITrackable CreateCitizen(string[] data)
         {
             string name = data[0];
             int age = int.Parse(data[1]);
@@ -60,7 +59,7 @@ namespace _05._BorderControl
             return cityzen;
         }
 
-        public static ITrackable CreateRobot(string[] data)
+        private static ITrackable CreateRobot(string[] data)
         {
             string model = data[0];
             string id = data[1];

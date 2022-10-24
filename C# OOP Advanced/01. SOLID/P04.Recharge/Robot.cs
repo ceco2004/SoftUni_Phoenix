@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace P04.Recharge
+﻿namespace P04.Recharge
 {
     public class Robot : Worker, IRechargeable
     {
@@ -36,14 +32,9 @@ namespace P04.Recharge
             this.currentPower -= hours;
         }
 
-        public override void Recharge()
+        public void Recharge()
         {
             this.currentPower = this.capacity;
-        }
-
-        public override void Sleep()
-        {
-            throw new InvalidOperationException("Robots cannot sleep");
         }
     }
 }

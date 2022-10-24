@@ -4,11 +4,11 @@ using System.Text;
 
 namespace P02.Graphic_Editor
 {
-    public class GraphicEditor
+    public abstract class Drawable : IShape
     {
-        public void DrawShape(Drawable shape)
+        public string Draw()
         {
-            Console.WriteLine(shape.Draw());
+            return $"I'm {this.GetType().Name}";
         }
     }
 }

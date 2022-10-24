@@ -4,7 +4,7 @@ using System.Text;
 
 namespace P02.Graphic_Editor
 {
-    public class Circle : IShape
+    public class Circle : Drawable
     {
     }
 }

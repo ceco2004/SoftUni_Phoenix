@@ -5,9 +5,15 @@ VisualStudioVersion = 16.0.32929.386
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. BoxOfT", "01. BoxOfT\01. BoxOfT.csproj", "{7FDCCCB5-FDEA-492A-A366-A69D74F638F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoxOfT_Tests", "BoxOfT_Tests\BoxOfT_Tests.csproj", "{6E5E55E5-8813-466C-A575-CBB6C92A06B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.BoxOfT_Tests", "BoxOfT_Tests\01.BoxOfT_Tests.csproj", "{6E5E55E5-8813-466C-A575-CBB6C92A06B7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. GenericArrayCreator", "02. GenericArrayCreator\02. GenericArrayCreator.csproj", "{6E045421-9F7E-481B-9526-22FD3996F611}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. GenericScale", "03. GenericScale\03. GenericScale.csproj", "{3124955C-CECA-4CC0-AFB9-704A61A7D5C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. GenericSwap", "04. GenericSwap\04. GenericSwap.csproj", "{C17137ED-0C0B-4943-8060-20A47CC0B919}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. MyCustomList", "07. MyCustomList\07. MyCustomList.csproj", "{5215823F-34EE-47A6-8035-CE532B85E014}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +33,18 @@ Global
 		{6E045421-9F7E-481B-9526-22FD3996F611}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E045421-9F7E-481B-9526-22FD3996F611}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E045421-9F7E-481B-9526-22FD3996F611}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3124955C-CECA-4CC0-AFB9-704A61A7D5C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3124955C-CECA-4CC0-AFB9-704A61A7D5C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3124955C-CECA-4CC0-AFB9-704A61A7D5C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3124955C-CECA-4CC0-AFB9-704A61A7D5C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C17137ED-0C0B-4943-8060-20A47CC0B919}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C17137ED-0C0B-4943-8060-20A47CC0B919}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C17137ED-0C0B-4943-8060-20A47CC0B919}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C17137ED-0C0B-4943-8060-20A47CC0B919}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5215823F-34EE-47A6-8035-CE532B85E014}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5215823F-34EE-47A6-8035-CE532B85E014}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5215823F-34EE-47A6-8035-CE532B85E014}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5215823F-34EE-47A6-8035-CE532B85E014}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

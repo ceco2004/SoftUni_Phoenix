@@ -5,7 +5,7 @@ namespace _01._BoxOfT
 {
     public class MyBox<T> : IMyBox<T>
     {
-        private IList<T> data;
+        private readonly IList<T> data;
 
         public int Count  {get => data.Count;}
         public MyBox()

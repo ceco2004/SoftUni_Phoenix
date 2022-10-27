@@ -4,7 +4,7 @@ namespace _01._BoxOfT
 {
     public class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             IMyBox<int> box = new MyBox<int>();
             box.Add(1);

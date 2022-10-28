@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace _01._Library
 {
@@ -13,10 +14,13 @@ namespace _01._Library
             Library libraryOne = new Library();
             Library libraryTwo = new Library(bookOne, bookTwo, bookThree);
 
-            foreach (var book in libraryTwo)
+            SortedSet<Book> books = new SortedSet<Book>(libraryTwo, new BookComparer());
+
+            foreach (var book in books)
             {
-                Console.WriteLine(book.Title);
+                Console.WriteLine(book);
             }
+
 
         }
     }

@@ -1,8 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 
 namespace _01._Library
 {
-    public class Book : IBook
+    public class Book : IBook, IComparable<Book>
     {
         private readonly IList<string> authors;
         public string Title { get; private set; }
@@ -18,5 +20,25 @@ namespace _01._Library
             this.authors = new List<string>(authors); 
         }
 
+        public override string ToString()
+        {
+            return $"{Title} - {Year}";
+        }
+
+        public int CompareTo([AllowNull] Book other)
+        {
+            int result = 0;
+
+            if (Year == other.Year)
+            {
+                result = Title.CompareTo(other.Title);
+            }
+            else
+            {
+                result = Year.CompareTo(other.Year);
+            }
+
+            return result;
+        }
     }
 }

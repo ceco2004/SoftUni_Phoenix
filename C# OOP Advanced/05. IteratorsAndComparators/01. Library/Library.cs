@@ -38,7 +38,6 @@ namespace _01._Library
 
             public void Dispose()
             {
-                
             }
 
             public bool MoveNext()

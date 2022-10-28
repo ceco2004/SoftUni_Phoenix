@@ -18,9 +18,5 @@ namespace _01._Library
             this.authors = new List<string>(authors); 
         }
 
-        public override string ToString()
-        {
-            return Title;
-        }
     }
 }

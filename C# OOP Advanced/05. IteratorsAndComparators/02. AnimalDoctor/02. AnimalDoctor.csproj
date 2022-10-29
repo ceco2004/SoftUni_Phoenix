@@ -6,8 +6,4 @@
     <RootNamespace>_02._AnimalDoctor</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Models\Interfaces\" />
-  </ItemGroup>
-
 </Project>

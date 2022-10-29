@@ -8,7 +8,10 @@ namespace _02._AnimalDoctor
     {
         static void Main(string[] args)
         {
-            Cat cat = new Cat("Pufi", "01/10/2019");
+            Clinic clinic = new Clinic();
+            Cat cat = new Cat("003","Pufi", "01/10/2019");
+            clinic.AddAnimal(cat);
+            IAnimal myCat = clinic.GetAnimal("002");
             Console.WriteLine(cat);
             IChip chip = new Chip();
             chip.InstallChip("001", cat);

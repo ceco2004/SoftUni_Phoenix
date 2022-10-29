@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace _02._AnimalDoctor.Models.Interfaces
 {
@@ -11,8 +9,8 @@ namespace _02._AnimalDoctor.Models.Interfaces
         string SerialNumber { get; }
         IAnimal Animal { get; }
 
-        string InstallChip(string serialNumber);
-        string RemoveChip(string serialNumber);
-        string UpdateChip(string serialNumber_OLD, string serialNumber_NEW);
+        void InstallChip(string serialNumber, IAnimal animal);
+        void RemoveChip(string serialNumber);
+        void UpdateChip(string serialNumber_NEW);
     }
 }

@@ -104,10 +104,10 @@ namespace _02._AnimalDoctor.Models
             char one = '.';
             char two = ':';
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine($"{FirstName} {LastName} is owner an {Animals.Count} animal's{(Animals.Count == 0 ? one : two)}");
+            sb.AppendLine($"{FirstName} {LastName} is owner of {Animals.Count} animal's{(Animals.Count == 0 ? one : two)}");
             foreach(IAnimal animal in Animals)
             {
-                sb.AppendLine($"{animal.Name} has born on {animal.DateOfBirdt.Year} and have owner {animal.Owner.FirstName} {animal.Owner.LastName}");
+                sb.AppendLine(animal.ToString());
             }
             return sb.ToString();
         }

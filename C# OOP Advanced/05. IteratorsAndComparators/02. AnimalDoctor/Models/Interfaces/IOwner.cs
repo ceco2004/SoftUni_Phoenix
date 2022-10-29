@@ -16,5 +16,6 @@ namespace _02._AnimalDoctor.Models.Interfaces
         bool AddAnimal(IAnimal animal);
         IAnimal RemoveAnimal(IAnimal animal);
 
+
     }
 }

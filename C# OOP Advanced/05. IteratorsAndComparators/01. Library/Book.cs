@@ -4,7 +4,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace _01._Library
 {
-    public class Book : IBook, IComparable<Book>
+    public class Book : IBook, IComparable<Book>, IComparer<Book>
     {
         private readonly IList<string> authors;
         public string Title { get; private set; }
@@ -39,6 +39,11 @@ namespace _01._Library
             }
 
             return result;
+        }
+
+        public int Compare([AllowNull] Book x, [AllowNull] Book y)
+        {
+            return x.CompareTo(y);
         }
     }
 }

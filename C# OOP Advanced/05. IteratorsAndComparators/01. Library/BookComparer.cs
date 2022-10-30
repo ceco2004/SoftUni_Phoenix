@@ -1,9 +1,8 @@
-﻿using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 
 namespace _01._Library
 {
-    public class BookComparer : IComparer<Book>
+    public class BookComparer : IBookComparer
     {
         public int Compare([AllowNull] Book x, [AllowNull] Book y)
         {

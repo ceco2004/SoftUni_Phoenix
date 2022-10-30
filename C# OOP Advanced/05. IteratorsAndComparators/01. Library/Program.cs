@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace _01._Library
 {
-    class Program
+    public class Program
     {
         static void Main()
         {

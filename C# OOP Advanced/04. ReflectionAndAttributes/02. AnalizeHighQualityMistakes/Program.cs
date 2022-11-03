@@ -16,15 +16,49 @@ namespace _02._AnalizeHighQualityMistakes
             
             sb.AppendLine(GetAllPrivateMethods(investigatedClass));
 
+            sb.AppendLine(Collector(investigatedClass));
+
             Console.WriteLine(sb.ToString());
+        }
+
+        private static string Collector(string investigatedClass)
+        {
+            Type type = GetMyType(investigatedClass);
+            StringBuilder sb = new StringBuilder();
+            if(type != null)
+            {
+                var setters = type.GetMethods(BindingFlags.Instance
+                                               | BindingFlags.Static
+                                               | BindingFlags.Public
+                                               | BindingFlags.NonPublic)
+                                    .Where(m => m.Name.StartsWith("get"));
+                foreach(var setter in setters)
+                {
+                    string name = setter.Name;
+                    string returnType = setter.ReturnType.Name;
+                    sb.AppendLine($"{name} will return {returnType}");
+                }
+
+                var getters = type.GetMethods(BindingFlags.Instance
+                                               | BindingFlags.Public
+                                               | BindingFlags.NonPublic)
+                                    .Where(m => m.Name.StartsWith("set"))
+                                    .ToArray();
+
+                foreach (var getter in getters)
+                {
+                    string name = getter.Name;
+                    string setType = getter.GetParameters().FirstOrDefault().ParameterType.Name;
+                    sb.AppendLine($"{name} will set field of {setType}");
+                }
+            }
+
+            return sb.ToString();
         }
 
         private static string GetAllPrivateMethods(string investigatedClass)
         {
-            Type type = Assembly.GetCallingAssembly()
-                                .GetTypes()
-                                .Where(t => t.Name == investigatedClass)
-                                .FirstOrDefault();
+            Type type = GetMyType(investigatedClass);
             StringBuilder sb = new StringBuilder();
             if(type != null)
             {
@@ -48,10 +82,7 @@ namespace _02._AnalizeHighQualityMistakes
         {
             StringBuilder sb = new StringBuilder();
 
-            Type investigatedType = Assembly.GetCallingAssembly()
-                                   .GetTypes()
-                                   .Where(t => t.Name == investigatedClass)
-                                   .FirstOrDefault();
+            Type investigatedType = GetMyType(investigatedClass);
             if(investigatedType != null)
             {
                 var allPublicFields = investigatedType.GetFields(BindingFlags.Instance
@@ -87,8 +118,19 @@ namespace _02._AnalizeHighQualityMistakes
 
             }
 
+            
 
             return sb.ToString();
+        }
+
+        private static Type GetMyType(string investigatedClass)
+        {
+            Type type = Assembly.GetCallingAssembly()
+                               .GetTypes()
+                               .Where(t => t.Name == investigatedClass)
+                               .FirstOrDefault();
+
+            return type;
         }
     }
 }

@@ -10,10 +10,38 @@ namespace _02._AnalizeHighQualityMistakes
         static void Main()
         {
             string investigatedClass = "Hacker";
+            StringBuilder sb = new StringBuilder();
 
-            string result = AnalizeClass(investigatedClass);
+            sb.AppendLine(AnalizeClass(investigatedClass));
+            
+            sb.AppendLine(GetAllPrivateMethods(investigatedClass));
 
-            Console.WriteLine(result);
+            Console.WriteLine(sb.ToString());
+        }
+
+        private static string GetAllPrivateMethods(string investigatedClass)
+        {
+            Type type = Assembly.GetCallingAssembly()
+                                .GetTypes()
+                                .Where(t => t.Name == investigatedClass)
+                                .FirstOrDefault();
+            StringBuilder sb = new StringBuilder();
+            if(type != null)
+            {
+                sb.AppendLine($"All Private Methods of Class: {investigatedClass}");
+
+                var methods = type.GetMethods(BindingFlags.Instance
+                                              | BindingFlags.Static
+                                              | BindingFlags.NonPublic);
+                string baseClass = type.BaseType.Name;
+                sb.AppendLine($"Base Class: {baseClass}");
+                foreach(var method in methods)
+                {
+                    sb.AppendLine($"  -{method.Name}");
+                }
+
+            }
+            return sb.ToString();
         }
 
         private static string AnalizeClass(string investigatedClass)
@@ -29,9 +57,10 @@ namespace _02._AnalizeHighQualityMistakes
                 var allPublicFields = investigatedType.GetFields(BindingFlags.Instance
                                                                  | BindingFlags.Static
                                                                  | BindingFlags.Public);
+                sb.AppendLine("High Quality Mistakes:");
                 foreach(var field in allPublicFields)
                 {
-                    sb.AppendLine($"Field {field.Name} must be private!");
+                    sb.AppendLine($"  Field {field.Name} must be private!");
                 }
 
 
@@ -42,9 +71,9 @@ namespace _02._AnalizeHighQualityMistakes
                                                             .ToArray();
                 foreach(var method in allNonPublicGetters)
                 {
-                    sb.AppendLine($"Getter {method.Name} must be public!");
+                    sb.AppendLine($"  Getter {method.Name} must be public!");
                 }
-
+                
 
                 var allPublicSetters = investigatedType.GetMethods(BindingFlags.Instance
                                                                    | BindingFlags.Static
@@ -53,7 +82,7 @@ namespace _02._AnalizeHighQualityMistakes
                                                         .ToArray();
                 foreach(var method in allPublicSetters)
                 {
-                    sb.AppendLine($"Setter {method.Name} must be private!");
+                    sb.AppendLine($"  Setter {method.Name} must be private!");
                 }
 
             }

@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Library", "01. Library\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. AnimalDoctor", "02. AnimalDoctor\02. AnimalDoctor.csproj", "{3686F290-EDE6-4EEE-9046-710DDE6442B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. EnumAndAtribute", "03. EnumAndAtribute\03. EnumAndAtribute.csproj", "{6EB4458E-2E4B-41AF-BEC9-4D78FCCBA013}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. EnumAndAtribute", "03. EnumAndAtribute\03. EnumAndAtribute.csproj", "{6EB4458E-2E4B-41AF-BEC9-4D78FCCBA013}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

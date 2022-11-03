@@ -6,7 +6,7 @@ using System.Globalization;
 
 namespace _02._AnimalDoctor.Models
 {
-    public abstract class Animal : IAnimal
+    public  class Animal : IAnimal
     {
         public string ID { get; }
 
@@ -79,7 +79,7 @@ namespace _02._AnimalDoctor.Models
             {
                 chipMsg = "I hav't chip yet.";
             }
-            return $"{Name} has born on {DateOfBirdt.Year}{aditional}\n{chipMsg}";
+            return $"{Name} is {this.GetType().Name} has born on {DateOfBirdt.Year}{aditional}\n{chipMsg}";
         }
 
         public int CompareTo([AllowNull] IAnimal other)

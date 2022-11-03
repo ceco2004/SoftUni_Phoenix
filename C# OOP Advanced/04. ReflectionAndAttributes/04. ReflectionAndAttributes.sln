@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAppReflection", "TestAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Stealer", "01. Stealer\01. Stealer.csproj", "{4EB94C0E-8226-4FE9-A3E4-053F545F4250}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. AnalizeHighQualityMistakes", "02. AnalizeHighQualityMistakes\02. AnalizeHighQualityMistakes.csproj", "{0176E71A-837D-4370-B00F-87EB52660564}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4EB94C0E-8226-4FE9-A3E4-053F545F4250}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4EB94C0E-8226-4FE9-A3E4-053F545F4250}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4EB94C0E-8226-4FE9-A3E4-053F545F4250}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0176E71A-837D-4370-B00F-87EB52660564}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0176E71A-837D-4370-B00F-87EB52660564}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0176E71A-837D-4370-B00F-87EB52660564}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0176E71A-837D-4370-B00F-87EB52660564}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

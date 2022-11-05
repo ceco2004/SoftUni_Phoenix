@@ -18,7 +18,33 @@ namespace _02._AnalizeHighQualityMistakes
 
             sb.AppendLine(Collector(investigatedClass));
 
+            sb.AppendLine(GetGustomAttribute(investigatedClass));
+
             Console.WriteLine(sb.ToString());
+        }
+
+        private static string GetGustomAttribute(string investigatedClass)
+        {
+            Type type = GetMyType(investigatedClass);
+            var methods = type.GetMethods(BindingFlags.Instance 
+                                          | BindingFlags.Static
+                                          | BindingFlags.Public
+                                          | BindingFlags.NonPublic);
+            StringBuilder sb = new StringBuilder();
+
+            foreach (var method in methods)
+            {
+                var atributes = method.CustomAttributes.Where(a => a.AttributeType == typeof(AuthorAttribute));
+
+
+                foreach (var attr in atributes)
+                {
+                    string name = attr.AttributeType.Name.Replace("Attribute", string.Empty);
+                    string value = (string)attr.ConstructorArguments.FirstOrDefault().Value;
+                    sb.AppendLine($"{name} - {value}");
+                }
+            }
+            return sb.ToString();
         }
 
         private static string Collector(string investigatedClass)

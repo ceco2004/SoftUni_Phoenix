@@ -1,5 +1,7 @@
 ﻿namespace _02._AnalizeHighQualityMistakes
 {
+    [Author("Ceco")]
+    [Author("Mr.X")]
     public class Hacker
     {
         public string username = "securityGod82";
@@ -15,8 +17,17 @@
 
         public double BankAccountBalance { get; private set; }
 
+        [Author("Ceco")]
+        [Author("Mr.X")]
         public void DownloadAllBankAccountsInTheWorld()
         {
+        }
+
+        [Author("Ceco")]
+        [Author("Mr.X")]
+        public static void SomeMethod()
+        {
+
         }
     }
 

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. AnalizeHighQualityMista
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01_HarvestingFields", "P01_HarvestingFields\P01_HarvestingFields.csproj", "{31EF653B-ACFE-4F78-8CC0-9DFFECBFB602}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02_BlackBoxInteger", "P02_BlackBoxInteger\P02_BlackBoxInteger.csproj", "{A4A0B193-3EAA-453A-93A0-050B8DA90B37}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{31EF653B-ACFE-4F78-8CC0-9DFFECBFB602}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31EF653B-ACFE-4F78-8CC0-9DFFECBFB602}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31EF653B-ACFE-4F78-8CC0-9DFFECBFB602}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4A0B193-3EAA-453A-93A0-050B8DA90B37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4A0B193-3EAA-453A-93A0-050B8DA90B37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4A0B193-3EAA-453A-93A0-050B8DA90B37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4A0B193-3EAA-453A-93A0-050B8DA90B37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

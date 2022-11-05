@@ -20,7 +20,32 @@ namespace _02._AnalizeHighQualityMistakes
 
             sb.AppendLine(GetGustomAttribute(investigatedClass));
 
+            sb.AppendLine(GetMethodsAndAuthors(investigatedClass));
+
             Console.WriteLine(sb.ToString());
+        }
+
+        private static string GetMethodsAndAuthors(string investigatedClass)
+        {
+            Type type = GetMyType(investigatedClass);
+            var methods = type.GetMethods(BindingFlags.Static
+                                          | BindingFlags.Instance
+                                          | BindingFlags.Public
+                                          | BindingFlags.NonPublic);
+            StringBuilder sb = new StringBuilder();
+            foreach(var method in methods)
+            {
+                string methodName = method.Name;
+
+            var attributes = method.CustomAttributes.Where(a => a.AttributeType == typeof(AuthorAttribute));
+                foreach(var attr in attributes)
+                {
+                    string author = attr.ConstructorArguments.FirstOrDefault().Value.ToString();
+                    sb.AppendLine($"Method {methodName} has writen by {author}");
+                }
+            }
+
+            return sb.ToString();
         }
 
         private static string GetGustomAttribute(string investigatedClass)

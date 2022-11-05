@@ -29,6 +29,13 @@
         {
 
         }
+
+        [Author("XaXo")]
+        [Author("Shi-shi")]
+        private static void Method2()
+        {
+
+        }
     }
 
 }
